@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="95px" height="109px" viewBox="0 0 95 109" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>checklist-icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="How-it-works" transform="translate(-215.000000, -192.000000)">
+            <g id="project-cards" transform="translate(36.000000, 163.000000)">
+                <g id="checklist-icon" transform="translate(179.000000, 30.000000)">
+                    <ellipse id="p-background-circle" fill="#058789" cx="47.5" cy="62" rx="47.5" ry="46"></ellipse>
+                    <g id="p-pen" transform="translate(4.000000, 26.000000)">
+                        <path d="M3.5,9.05660377 C4.73008876,9.05660377 5.72727273,7.02921396 5.72727273,4.52830189 C5.72727273,2.86102717 4.98484848,1.35159321 3.5,0 C2.01515152,1.35159321 1.27272727,2.86102717 1.27272727,4.52830189 C1.27272727,7.02921396 2.26991124,9.05660377 3.5,9.05660377 Z" id="Oval" fill="#E3A72F"></path>
+                        <path d="M0.722761629,7.8490566 L6.30252907,7.8490566 L6.30252907,43.4662176 L7,43.4662176 L7,63.3962264 C5.29509307,63.7987421 4.01639637,64 3.16390988,64 C2.3114234,64 1.26521701,63.7987421 0.0252906991,63.3962264 C0.0590116312,53.089086 0.0590116312,47.4538659 0.0252906991,46.490566 C-0.00843023303,45.5272662 -0.00843023303,44.5209768 0.0252906991,43.4716981 L0.722761629,43.4662176 L0.722761629,7.8490566 Z" id="Rectangle" fill="#243239"></path>
+                        <rect id="Rectangle" fill="#E3A72F" x="0" y="7.24528302" width="7" height="1"></rect>
+                        <rect id="Rectangle" fill="#E3A72F" x="0.636363636" y="17.509434" width="5.72727273" height="3.01886792"></rect>
+                        <rect id="Rectangle" fill="#E3A72F" x="0" y="43.4716981" width="7" height="3.01886792"></rect>
+                        <rect id="Rectangle" fill="#EDF3F3" x="1.90909091" y="48.3018868" width="2.54545455" height="15.6981132"></rect>
+                    </g>
+                    <g id="pages" transform="translate(15.000000, 10.000000)">
+                        <rect id="p-backpage" fill="#BCF4F7" x="6.05263158" y="0" width="62.9473684" height="85.9032345"></rect>
+                        <polygon id="p-frontpage" fill="#EDF3F3" points="0 6.04952356 62.9473684 6.04952356 62.9473684 76.7535248 47.8094901 91.9197497 0 91.9527581"></polygon>
+                        <polygon id="p-pagefold" fill="#7BD1DF" transform="translate(51.449401, 80.156132) rotate(-45.000000) translate(-51.449401, -80.156132) " points="51.4464487 74.4062099 62.3413409 85.9060545 40.5574617 85.90046"></polygon>
+                    </g>
+                    <g id="clock" transform="translate(58.000000, 4.000000)">
+                        <circle id="p-clock-outline" stroke="#243239" stroke-width="4" fill="#F0ECC9" cx="15.5" cy="15.5" r="13.5"></circle>
+                        <ellipse id="Oval" stroke="#E3A72F" stroke-width="2" cx="15.5" cy="15.1960784" rx="9.6372549" ry="9.94117647"></ellipse>
+                        <polyline id="Path" stroke="#058789" stroke-width="3" stroke-linecap="round" points="27.3529412 16.4117647 15.1960784 16.4117647 15.1960784 4.25490196"></polyline>
+                    </g>
+                    <g id="checklist" transform="translate(22.000000, 26.000000)">
+                        <g id="checklist-option" transform="translate(0.000000, 14.842506)">
+                            <g id="checkbox">
+                                <rect id="p-checkbox-outline" stroke="#F77C5B" stroke-width="2" x="1" y="1" width="6.56457417" height="6.65812853" rx="2"></rect>
+                                <polyline id="p-checkmark" stroke="#243239" stroke-width="3" stroke-linecap="round" points="0.305877649 2.16453213 3.36465414 5.87515865 9.60669802 0"></polyline>
+                            </g>
+                            <g id="p-line" transform="translate(13.458617, 2.164532)" stroke="#058789" stroke-linecap="square" stroke-width="2">
+                                <line x1="0" y1="0.309218876" x2="36.7053179" y2="0.309218876" id="Line"></line>
+                                <line x1="0" y1="4.01984539" x2="36.7053179" y2="4.01984539" id="Line"></line>
+                            </g>
+                        </g>
+                        <g id="checklist-option">
+                            <g id="checkbox">
+                                <rect id="p-checkbox-outline" stroke="#F77C5B" stroke-width="2" x="1" y="1" width="6.56457417" height="6.65812853" rx="2"></rect>
+                                <polyline id="p-checkmark" stroke="#243239" stroke-width="3" stroke-linecap="round" points="0.305877649 2.16453213 3.36465414 5.87515865 9.60669802 0"></polyline>
+                            </g>
+                            <g id="p-line" transform="translate(13.458617, 2.164532)" stroke="#058789" stroke-linecap="square" stroke-width="2">
+                                <line x1="0" y1="0.309218876" x2="20.7996801" y2="0.309218876" id="Line"></line>
+                                <line x1="0" y1="4.01984539" x2="20.7996801" y2="4.01984539" id="Line"></line>
+                            </g>
+                        </g>
+                        <g id="checklist-option" transform="translate(0.000000, 29.685012)">
+                            <g id="checkbox">
+                                <rect id="p-checkbox-outline" stroke="#F77C5B" stroke-width="2" x="1" y="1" width="6.56457417" height="6.65812853" rx="2"></rect>
+                                <polyline id="p-checkmark" stroke="#243239" stroke-width="3" stroke-linecap="round" points="0.305877649 2.16453213 3.36465414 5.87515865 9.60669802 0"></polyline>
+                            </g>
+                            <g id="p-line" transform="translate(13.458617, 2.164532)" stroke="#058789" stroke-linecap="square" stroke-width="2">
+                                <line x1="0" y1="0.309218876" x2="36.7053179" y2="0.309218876" id="Line"></line>
+                                <line x1="0" y1="4.01984539" x2="36.7053179" y2="4.01984539" id="Line"></line>
+                            </g>
+                        </g>
+                        <g id="checklist-option" transform="translate(0.000000, 44.527518)">
+                            <g id="checkbox">
+                                <rect id="p-checkbox-outline" stroke="#F77C5B" stroke-width="2" x="1" y="1" width="6.56457417" height="6.65812853" rx="2"></rect>
+                                <polyline id="p-checkmark" stroke="#243239" stroke-width="3" stroke-linecap="round" points="0.305877649 2.16453213 3.36465414 5.87515865 9.60669802 0"></polyline>
+                            </g>
+                            <g id="p-line" transform="translate(13.458617, 2.164532)" stroke="#058789" stroke-linecap="square" stroke-width="2">
+                                <line x1="0" y1="0.309218876" x2="36.7053179" y2="0.309218876" id="Line"></line>
+                                <line x1="0" y1="4.01984539" x2="36.7053179" y2="4.01984539" id="Line"></line>
+                            </g>
+                        </g>
+                        <g id="checklist-option" transform="translate(0.000000, 57.514711)">
+                            <g id="checkbox">
+                                <rect id="p-checkbox-outline" stroke="#F77C5B" stroke-width="2" x="1" y="1" width="6.56457417" height="6.65812853" rx="2"></rect>
+                                <polyline id="p-checkmark" stroke="#243239" stroke-width="3" stroke-linecap="round" points="0.305877649 2.16453213 3.36465414 5.87515865 9.60669802 0"></polyline>
+                            </g>
+                            <g id="p-line" transform="translate(13.458617, 2.164532)" stroke="#058789" stroke-linecap="square" stroke-width="2">
+                                <line x1="0" y1="0.309218876" x2="22.0231907" y2="0.309218876" id="Line"></line>
+                                <line x1="0" y1="4.01984539" x2="22.0231907" y2="4.01984539" id="Line"></line>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="p-shine" transform="translate(6.000000, 0.000000)" stroke="#243239" stroke-linecap="round" stroke-width="2">
+                        <line x1="19.6969697" y1="4.13636364" x2="17.2727273" y2="6.68181818" id="Line-2"></line>
+                        <line x1="11.2121212" y1="0.318181818" x2="11.2121212" y2="3.5" id="Line-3"></line>
+                        <line x1="3.33333333" y1="4.13636364" x2="5.75757576" y2="6.04545455" id="Line-4"></line>
+                        <line x1="0.303030303" y1="12.4090909" x2="3.33333333" y2="12.4090909" id="Line-5"></line>
+                        <line x1="4.54545455" y1="20.6818182" x2="6.36363636" y2="18.1363636" id="Line-6"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
