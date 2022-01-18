@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>carbon:bare-metal-server</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-440.000000, -840.000000)">
+            <g id="carbon:bare-metal-server" transform="translate(440.000000, 840.000000)">
+                <rect id="ViewBox" x="0" y="0" width="120" height="120"></rect>
+                <ellipse id="Oval" fill="#000000" fill-rule="nonzero" cx="33.5" cy="23" rx="3.5" ry="4"></ellipse>
+                <path d="M97.5,38 L22.5,38 C18.359578,37.9958658 15.0041342,34.640422 15,30.5 L15,15.5 C15.0041342,11.359578 18.359578,8.00413422 22.5,8 L97.5,8 C101.640422,8.00413422 104.995866,11.359578 105,15.5 L105,30.5 C104.995866,34.640422 101.640422,37.9958658 97.5,38 L97.5,38 Z M22.5,15.5 L22.5,30.5 L97.5,30.5 L97.5,15.5 L22.5,15.5 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                <ellipse id="Oval" fill="#000000" fill-rule="nonzero" cx="33.5" cy="60" rx="3.5" ry="4"></ellipse>
+                <path d="M97.5,75 L22.5,75 C18.359578,74.9958658 15.0041342,71.640422 15,67.5 L15,52.5 C15.0041342,48.359578 18.359578,45.0041342 22.5,45 L97.5,45 C101.640422,45.0041342 104.995866,48.359578 105,52.5 L105,67.5 C104.995866,71.640422 101.640422,74.9958658 97.5,75 L97.5,75 Z M22.5,52.5 L22.5,67.5 L97.5,67.5 L97.5,52.5 L22.5,52.5 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                <ellipse id="Oval" fill="#000000" fill-rule="nonzero" cx="33.5" cy="97" rx="3.5" ry="4"></ellipse>
+                <path d="M97.5,112 L22.5,112 C18.359578,111.995866 15.0041342,108.640422 15,104.5 L15,89.5 C15.0041342,85.359578 18.359578,82.0041342 22.5,82 L97.5,82 C101.640422,82.0041342 104.995866,85.359578 105,89.5 L105,104.5 C104.995866,108.640422 101.640422,111.995866 97.5,112 L97.5,112 Z M22.5,89.5 L22.5,104.5 L97.5,104.5 L97.5,89.5 L22.5,89.5 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

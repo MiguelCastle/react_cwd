@@ -1,5 +1,5 @@
 import React from "react";
-import staffImg from '../../../assets/images/bck/client/testimonial-1.jpg'
+import staffImg from '../../../assets/images/placeholders/testimonial-1.jpg'
 interface HomeStaffProps {
     
 }

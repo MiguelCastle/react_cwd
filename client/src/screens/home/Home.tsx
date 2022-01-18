@@ -1,13 +1,14 @@
 import React, { useRef } from 'react';
 import Header from '../../components/header';
 import { Facebook, Instagram, LinkedIn, Twitter } from '../../components/icons';
+import logoLight from '../../assets/images/logo/logo.webp';
 import About from './sections/homeAbout';
 import HomeGrowth from './sections/homeGrowth';
 import Intro from './sections/homeIntro';
 import HomePortfolio from './sections/homeProfile';
 import Service from './sections/homeService';
 import ImgbckDesc from '../../components/cards/imgbckDesc';
-import brand from '../../assets/images/bck/brand/brand-01.png';
+import brand from '../../assets/images/placeholders/brand/brand-01.png';
 import HomeStaff from './sections/homeStaff';
 
 const Home: React.FC<{}> = () => {
@@ -29,48 +30,9 @@ const Home: React.FC<{}> = () => {
       <div id="home-container">
         <Header />
         <Intro />
-        <About />
         <Service />
         <HomePortfolio />
         <HomeGrowth />
-        <HomeStaff/>
-        <section id="hlastest-news-section">
-          <h4 className="theme-gradient">what's stories on</h4>
-          <h2>latest news</h2>
-          <p>
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alternation.
-          </p>
-          <ul>
-            <li>
-              <ImgbckDesc
-                title1={"app development"}
-                title2={"What is the difference between Web and Brand."}
-                desc={
-                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, veritatis."
-                }
-              />
-            </li>
-            <li>
-              <ImgbckDesc
-                title1={"react app"}
-                title2={"A big ticket gone to be an interesting look New York"}
-                desc={
-                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, veritatis."
-                }
-              />
-            </li>
-            <li>
-              <ImgbckDesc
-                title1={"photoshop"}
-                title2={"Getting tickets to the big show have a closer look"}
-                desc={
-                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, veritatis."
-                }
-              />
-            </li>
-          </ul>
-        </section>
         <section id="htop-clients-section">
           <h4 className="theme-gradient">top clients</h4>
           <h2>we worked with brands</h2>
@@ -111,7 +73,7 @@ const Home: React.FC<{}> = () => {
           </div>
           <div id="footer-lcw">
               <img
-                src="/assets/images/logo/logo-light.png"
+                src={logoLight}
                 alt="logo of castillo webdevelopment"
               />
               <p>

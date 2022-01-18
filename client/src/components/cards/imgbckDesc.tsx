@@ -1,5 +1,5 @@
 import React from 'react';
-import bck from '../../assets/images/bck/blog/blog-04.jpg';
+import bck from '../../assets/images/placeholders/blog-04.jpg';
 
 interface ImgbckDescProps {
     title1: string,

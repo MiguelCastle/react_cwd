@@ -1,0 +1,27 @@
+[
+    {
+        "title": "HTML/CSS/JS",
+        "descript": "The core building blocks of the internet are what we use for any static website."
+    },
+    {
+        "title": "React",
+        "descript": "For web apps that need more interactivity we utilize the ReactJS framework. It insures we can provide all the moving parts at a very fast speed."
+    },
+    {
+        "title": "Node.js",
+        "descript": "We know how to use Node.js"
+    },
+    {
+        "title": "django/python",
+        "descript":"We also know how to use Django."
+    },
+    {
+        "title": "api integration",
+        "descript":"If you're wanting to have your own api or incorporate one."
+    },
+    {
+        "title": "hosting configuration",
+        "descript":"We take care of getting your website up and running."
+    }
+
+]

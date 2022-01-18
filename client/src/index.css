@@ -11,7 +11,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #000000;
+  background: #000;
 }
 
 code {
@@ -27,7 +27,12 @@ code {
 }
 
 :root {
-  --color-primaryfill: #FD4766;
+  --primaryfill: #1C9FCA;
+  --secondaryfill: #233F52;
+  --main-green: #58F099;
+  --lightgray: #C4C4C4;
+  --mid-gray: #A4A3A3;
+  --color-primaryfill: #58F099;
   --color-secondaryfill: #337DFF;
   --color-cyan: #12d8df;
   --color-lightgreen: #59C98D;
@@ -77,7 +82,7 @@ code {
 
 .theme-gradient {
   background: var(--color-primaryfill);
-  background: linear-gradient(120deg, #1C99FE 20.69%, #7644FF 50.19%, var(--color-primaryfill) 79.69%);
+  background: linear-gradient(120deg, var(--color-secondaryfill) 20.69%, var(--primaryfill) 50.19%, var(--main-green) 79.69%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -129,12 +134,12 @@ section h4 {
 }
 
 .icon-circle {
-  background: var(--color-primaryfill);
+  background: var(--main-green);
   border-radius: 50%;
   padding: 3.2vw;
   height: 6vh;
   width: 6vh;
-  color: var(--color-white);
+  color: #fff;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -298,6 +303,7 @@ section h4 {
 .header-container button {
   width: 30%;
   margin-right: 5%;
+  color: #fff;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -305,6 +311,19 @@ section h4 {
     width: 20%;
     margin-right: 0%;
     font-size: var(--font-size-b4);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .header-container button {
+    color: #000;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-container #hbuy-now-btn {
+    color: #000;
+    background: var(--main-green);
   }
 }
 
@@ -504,7 +523,6 @@ section h4 {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .main-menunav {
     width: 60vw;
-    background: none;
   }
 }
 
@@ -535,13 +553,12 @@ section h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 800vh;
 }
 
 #hintro-section {
   padding-bottom: 8vh;
-  background: url("/public/assets/images/webdevelopment.webp");
-  background-position: 55% 50%;
+  background: url("./assets/images/backgrounds/heroBackground.webp");
+  background-position: 70% 50%;
   background-size: cover;
 }
 
@@ -550,8 +567,8 @@ section h4 {
   font-size: var(--font-size-b1);
   font-weight: 900;
   text-transform: capitalize;
-  padding-top: 3vh;
-  margin-bottom: 3vh;
+  padding-top: 8vh;
+  margin-bottom: 10vh;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -566,6 +583,12 @@ section h4 {
     padding-top: 6vh;
     margin-bottom: 6vh;
   }
+}
+
+#hintro-section p {
+  padding: 0 5vw;
+  color: var(--gray-white);
+  text-align: center;
 }
 
 #hintro-section ul {
@@ -611,13 +634,19 @@ section h4 {
   background: var(--color-white);
 }
 
+#habout-section h2 {
+  color: var(--primaryfill);
+}
+
 #habout-section img {
   border-radius: var(--img-border-radius);
 }
 
 @media only screen and (min-width: 992px) {
   #habout-section img {
-    height: 80vh;
+    height: 60vh;
+    margin-top: 10vh;
+    width: 50vw;
   }
 }
 
@@ -647,7 +676,7 @@ section h4 {
 }
 
 #habout-section p {
-  color: var(--color-gray);
+  color: #41474a;
   line-height: 3.2vh;
 }
 
@@ -971,6 +1000,8 @@ section h4 {
 #hstaff-section h2 {
   font-weight: 400;
   line-height: 5vh;
+  font-size: var(--font-size-b2);
+  padding-bottom: 3vh;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1233,6 +1264,7 @@ footer {
 footer h2 {
   text-transform: capitalize;
   font-weight: 800;
+  padding-bottom: 5vh;
 }
 
 @media only screen and (min-width: 992px) {
@@ -1269,6 +1301,7 @@ footer img {
 footer p {
   color: var(--color-gray);
   font-size: var(--font-size-b3);
+  padding-top: 5vh;
 }
 
 footer ul {
@@ -1660,8 +1693,8 @@ footer #icons-list li:hover {
 .img-background-desc-container:hover div {
   padding-top: 46vh;
   color: var(--color-white);
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#FD4766));
-  background: linear-gradient(to bottom, transparent, #FD4766);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(var(--main-green)));
+  background: linear-gradient(to bottom, transparent, var(--main-green));
 }
 
 .img-background-desc-container:hover div p {

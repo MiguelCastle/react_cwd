@@ -1,10 +1,11 @@
 import React from 'react'
 import { PaperPlane } from '../../../components/icons';
-
+import aboutImg from '../../../assets/images/placeholders/about-1.png';
+import building from '../../../assets/images/placeholders/building.png';
 const HomeAbout: React.FC<{}> = () => {
     return ( 
         <section id="habout-section">
-            <img src='/assets/images/about/about-1.png' alt="filler" width="100%"/>
+            <img src={building} alt="filler" width="100%"/>
             <div id="ha-content">
                 <div className="icon-circle">
                     <PaperPlane />

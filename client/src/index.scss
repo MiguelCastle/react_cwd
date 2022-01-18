@@ -12,7 +12,10 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #000000;
+    background: #000;
+    // background: url('./assets/images/backgrounds/mini-icons-background.webp');
+    // background: cover;
+    // background-position: center;
 }
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -24,4 +27,4 @@ code {
 .not-inview{
   display: none;
 }
-@import '../public/assets/scss/style.scss';
+@import './assets/scss/style.scss';

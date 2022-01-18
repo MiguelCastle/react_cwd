@@ -33,17 +33,17 @@ const HomeGrowth: React.FC<HomeGrowthProps> = () => {
                 // onLeave: myLeaveFunc,
                 onEnterBack: onEnterFunc,
                 // onLeaveBack: myLeaveFunc,
-                markers: true 
+                // markers: true 
 			}
         })
     }, []);
 
     return ( 
         <section id="hgrowth-section" ref={r}>
-            <h4 className="theme-gradient">experts growths</h4>
-            <h2>our company growth</h2>
+            <h4 className="theme-gradient">The Benefits</h4>
+            <h2>why have a website?</h2>
             <p>
-                We have grown strength over the past 20 years.
+               Let's look at a few reasons why you should have a website.
             </p>
             <ul>
                 <li>

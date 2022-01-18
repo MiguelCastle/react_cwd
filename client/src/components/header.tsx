@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from "react";
 import { Link } from "react-router-dom";
-
+import logo from '../assets/images/logo/logo.webp';
 interface CloseXProps {
   color: string;
 }
@@ -116,7 +116,7 @@ const Header: React.FC<HeaderProps> = () => {
   return (
     <div className="header-container">
       <img
-        src="/assets/images/logo/logo.png"
+        src={logo}
         alt="logo of castillo webdevelopment"
       />
       <button className="btn-default" id="hbuy-now-btn">buy now</button>
@@ -139,12 +139,12 @@ const Header: React.FC<HeaderProps> = () => {
         </button>
         <ul id="mainmenu">
           <li>
-            <Link to={"/"}>Home</Link>
+            <a href="/#">Home</a>
           </li>
           <li className="has-dropdown" onClick={handleDropDownClick}>
-            <Link to={"/"} className={activeInnerMenus[0] === 'open' ? 'open': ''}>
+            <a href={"/#hservices-section"} className={activeInnerMenus[0] === 'open' ? 'open': ''}>
               Service
-            </Link>
+            </a>
             <ul className={activeInnerMenus[0] === 'open' ? 'submenu active': 'submenu'}>
               <li>
                 <a href="/main-demo">Main Demo</a>
@@ -164,10 +164,10 @@ const Header: React.FC<HeaderProps> = () => {
             </ul>
           </li>
           <li>
-            <Link to={"/"}>About</Link>
+            <a href={"/#hproject-section"}>Portfolio</a>
           </li>
           <li>
-            <Link to={"/"}>Contact</Link>
+            <a href={"/#hgrowth-section"}>Why Us</a>
           </li>
         </ul>
       </nav>

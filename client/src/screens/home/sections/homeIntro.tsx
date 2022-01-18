@@ -5,16 +5,16 @@ import {HeartBeat, BroadcastScreen, UnfoldingMap} from '../../../components/icon
 const HomeIntro: React.FC<{}> = () => {
     return (
         <section id="hintro-section">
-            <h1 className='theme-gradient'>design driven development your web products.</h1>
+            <h1 className='theme-gradient'>your partner in web development</h1>
             <ul>
                 <li>
-                    <IconTitleDesc icon={<HeartBeat/>} title={"awarded design"} desc={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut similique tempora quidem ducimus, dolores ipsum!"}/>
+                    <IconTitleDesc icon={<HeartBeat/>} title={"Fast"} desc={"One of our goals is make a fast website. Lorem ipsum dolor, sit amet consectetur adipisicing elit."}/>
                 </li>
                 <li>
-                    <IconTitleDesc icon={<BroadcastScreen />} title={"design & creative"} desc={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut similique tempora quidem ducimus, dolores ipsum!"}/>
+                    <IconTitleDesc icon={<BroadcastScreen />} title={"Reliable"} desc={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut similique tempora quidem ducimus, dolores ipsum!"}/>
                 </li>
                 <li>
-                    <IconTitleDesc icon={<UnfoldingMap/>} title={"app development"} desc={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut similique tempora quidem ducimus, dolores ipsum!"}/>
+                    <IconTitleDesc icon={<UnfoldingMap/>} title={"Secure"} desc={"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut similique tempora quidem ducimus, dolores ipsum!"}/>
                 </li>
             </ul>
         </section>
