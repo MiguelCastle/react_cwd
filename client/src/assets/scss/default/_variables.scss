@@ -36,6 +36,7 @@
     --font-size-lg-b3: 6vh;
     --font-size-lg-b4: 4vh;
     --font-size-lg-b5: 3vh;
+    --font-size-lg-b6: 2.8vh;
 }
 // Layouts
 $smlg-device: 'only screen and (max-width: 1199px)';
@@ -56,6 +57,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
 // classes 
 .blue{
     color: var(--color-secondaryfill) !important;
+    fill: var(--color-secondaryfill) !important; 
 }
 .lightblue{
     color: var(--color-cyan) !important;

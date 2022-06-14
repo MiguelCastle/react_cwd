@@ -2,7 +2,6 @@ import React from 'react';
 import CardIconDesc from '../../../components/cards/iconTitleDesc';
 import { ApiIntegration, BroadcastScreen, DjangoIcon, DoubleBox, Email, HostingConfiguration, Monitor, NodeIcon, ReactIcon } from '../../../components/icons';
 import data from "../../../assets/data/homeservices.json";
-
 interface HomeServiceProps {
     
 }

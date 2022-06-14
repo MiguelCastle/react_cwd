@@ -1,0 +1,1 @@
+20220609	11:03:44	0fea2a6c-f491-4e35-ab2b-db53a157a552	Error: Not allowed by CORS

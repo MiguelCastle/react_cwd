@@ -1,15 +1,16 @@
 .header-container{
     @include flexRowCenter;
     padding: var(--inner-content-padding-sm);
-    padding-top: 5vh;
+    padding-top: 3vh;
     @media #{$md-layout} {
-        padding: 3vh;
+        padding: 1vh;
     }
     @media #{$lg-layout}{
         display: grid;
         grid-template-columns: 20vw 65vw 15vw;
         grid-template-rows: 1fr;
         flex-wrap: none;
+        padding: .25%;
     }
     img{
         width: 35%;
@@ -38,6 +39,8 @@
         }
     }
     #hbuy-now-btn{
+        background-color: var(--main-green);
+        border: none;
         @media #{$md-layout} {
             color: #000;
             background: var(--main-green);
@@ -79,7 +82,10 @@
     z-index: 999;
     top: 0;
     right: 0;
+    transition-property:translateX;
     transform: translateX(100%);
+    // transform: matrix(0,0,0,0, 1, 0);
+    // transform: translate3d(100%, 0, 0);
     width: 80vw;
     height: 100vh;
     padding: var(--inner-content-padding-sm);
@@ -102,6 +108,10 @@
             text-decoration: none;
             color: var(--color-black);
             width: 100%;
+            &:hover{
+                transition: all .25s ease-in;
+                color: var(--main-green);
+            }
         }
         li.has-dropdown{
             &>a{

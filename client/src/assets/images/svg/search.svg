@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180px" height="200px" viewBox="0 0 180 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>search</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-1442.000000, -100.000000)">
+            <g id="search" transform="translate(1442.000000, 100.000000)">
+                <rect id="ViewBox" x="0" y="0" width="180" height="200"></rect>
+                <g id="Group" transform="translate(23.000000, 25.000000)" stroke="#000000" stroke-width="10">
+                    <path d="M0,133.333333 L0,16.6666667 C0,7.46192084 6.71572875,0 15,0 L120,0 C128.284271,0 135,7.46192084 135,16.6666667 L135,133.333333 C135,142.538079 128.284271,150 120,150 L15,150 C6.71572875,150 0,142.538079 0,133.333333 Z" id="Path"></path>
+                    <path d="M81.42,90.4166667 C88.1094608,83.2353963 90.7875918,72.600276 88.4236683,62.6044143 C86.0597448,52.6085526 79.0222401,44.8100407 70.0196586,42.2102698 C61.0170772,39.6104988 51.4526841,42.6147044 45.0075,50.0666667 C35.2947076,61.2966581 35.4647826,79.1007054 45.389914,90.0991002 C55.3150453,101.097495 71.3390863,101.23873 81.42,90.4166667 L81.42,90.4166667 Z M81.42,90.4166667 L97.5,108.333333" id="Shape" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

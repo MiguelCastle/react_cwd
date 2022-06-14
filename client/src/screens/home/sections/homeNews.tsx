@@ -1,5 +1,7 @@
 import React from 'react';
 import ImgbckDesc from '../../../components/cards/imgbckDesc';
+import bck from '../../../assets/images/placeholders/blog-04.jpg'
+// import bck from '../../assets/images/placeholders/blog-04.jpg';
 
 interface HomeNewsProps {
     
@@ -22,6 +24,7 @@ const HomeNews: React.FC<HomeNewsProps> = () => {
               desc={
                 "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, veritatis."
               }
+              bck={bck}
             />
           </li>
           <li>
@@ -31,6 +34,7 @@ const HomeNews: React.FC<HomeNewsProps> = () => {
               desc={
                 "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, veritatis."
               }
+              bck={bck}
             />
           </li>
           <li>
@@ -40,6 +44,7 @@ const HomeNews: React.FC<HomeNewsProps> = () => {
               desc={
                 "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, veritatis."
               }
+              bck={bck}
             />
           </li>
         </ul>

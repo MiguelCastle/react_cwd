@@ -3,6 +3,7 @@
   box-sizing: border-box;
   padding:0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 body {
   position: relative;
@@ -27,4 +28,9 @@ code {
 .not-inview{
   display: none;
 }
+#container{
+  display: flex;
+  flex-direction: column;
+}
+
 @import './assets/scss/style.scss';

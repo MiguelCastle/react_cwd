@@ -3,7 +3,10 @@
 @import './default/mixins';
 @import './default/animations';
 @import './header/header';
-@import './screens/home';
 @import './components/cards';
+@import './screens/home';
+@import './screens/contact';
+@import './components/toTop';
+@import './components/footer';
 // common styles
 @import './common/button';

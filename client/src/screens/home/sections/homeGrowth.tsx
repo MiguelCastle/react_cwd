@@ -1,9 +1,10 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import CardIconDesc from '../../../components/cards/iconTitleDesc';
-import { CheckCircle, Clock, Heart, Medal } from '../../../components/icons';
+import { Announcement, CheckCircle, Clock, HandShake, Heart, Medal, Open, Search, Smiley } from '../../../components/icons';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import IconTitleDescAnim from '../../../components/cards/iconTitleDescAnim';
+import data from '../../../assets/data/reasonsWhy.json';
 gsap.registerPlugin(ScrollTrigger); 
    
 interface HomeGrowthProps {
@@ -47,16 +48,19 @@ const HomeGrowth: React.FC<HomeGrowthProps> = () => {
             </p>
             <ul>
                 <li>
-                    <IconTitleDescAnim desc={'statisfied customers'} icon={<Heart/>} extraClass={'cid-lgt'} anim={anim} num={199} />
+                <CardIconDesc title={data[0].title} desc={data[0].descript} icon={<Announcement />} extraClass={'why-card'}/>
                 </li>
                 <li>
-                    <IconTitleDescAnim  desc={'days of operation'} icon={<Clock/>} extraClass={'cid-lgt'} color={'blue'} anim={anim} num={575}/>
+                <CardIconDesc title={data[1].title} desc={data[1].descript} icon={<HandShake/>} extraClass={'why-card'}/>
                 </li>
                 <li>
-                    <IconTitleDescAnim  desc={'complete project'} icon={<CheckCircle/>} extraClass={'cid-lgt'} color={'lightblue'} anim={anim} num={49}/>
+                <CardIconDesc title={data[2].title} desc={data[2].descript} icon={<Search/>} extraClass={'why-card'}/>
                 </li>
                 <li>
-                    <IconTitleDescAnim  desc={'win awards'} icon={<Medal/>} extraClass={'cid-lgt'} color={'purple'} anim={anim} num={55}/>
+                <CardIconDesc title={data[3].title} desc={data[3].descript} icon={<Smiley/>} extraClass={'why-card'}/>
+                </li>
+                <li>
+                <CardIconDesc title={data[4].title} desc={data[4].descript} icon={<Open/>} extraClass={'why-card'}/>
                 </li>
             </ul>
         </section>

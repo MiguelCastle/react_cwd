@@ -1,4 +1,5 @@
 import React, {useEffect, useRef, useState} from "react";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logo from '../assets/images/logo/logo.webp';
 interface CloseXProps {
@@ -93,14 +94,16 @@ const HamburgerBars = () => {
 
 interface HeaderProps {}
 const Header: React.FC<HeaderProps> = () => {
+  let navigate = useNavigate(); 
   const [menuInView, setMenuInView] = useState(false);
   const menuBtnRef = useRef<HTMLButtonElement>(null!);
   const [navStyle, setNavStyle] = useState("main-menunav");
   const [activeInnerMenus, setActiveInnerMenus] = useState([""]);
 
   const handleMenuBtnClick = () => {
-    setMenuInView(!menuInView);
-    setNavStyle("main-menunav slideOutRight");
+    if(menuInView) setMenuInView(false);
+    else setMenuInView(true);
+    setNavStyle("slideOutRight main-menunav");
   };
   const handleDropDownClick = () => {
     if (activeInnerMenus[0] === "") {
@@ -119,7 +122,7 @@ const Header: React.FC<HeaderProps> = () => {
         src={logo}
         alt="logo of castillo webdevelopment"
       />
-      <button className="btn-default" id="hbuy-now-btn">buy now</button>
+      <button onClick={() => navigate('/contact')} className="btn-default" id="hbuy-now-btn">hire me</button>
       <button
         className="btn-default icon-btn"
         id="header-menu-btn"
@@ -139,9 +142,14 @@ const Header: React.FC<HeaderProps> = () => {
         </button>
         <ul id="mainmenu">
           <li>
-            <a href="/#">Home</a>
+            <a href="/">Home</a>
           </li>
-          <li className="has-dropdown" onClick={handleDropDownClick}>
+          <li>
+          <a href={"/#hservices-section"}>
+              Our Tools
+            </a>
+          </li>
+          {/* <li className="has-dropdown" onClick={handleDropDownClick}>
             <a href={"/#hservices-section"} className={activeInnerMenus[0] === 'open' ? 'open': ''}>
               Service
             </a>
@@ -162,12 +170,12 @@ const Header: React.FC<HeaderProps> = () => {
                 <a href="/dark-portfolio-landing">Portfolio One Page 02</a>
               </li>
             </ul>
-          </li>
+          </li> */}
           <li>
             <a href={"/#hproject-section"}>Portfolio</a>
           </li>
           <li>
-            <a href={"/#hgrowth-section"}>Why Us</a>
+            <a href={"/#hgrowth-section"}>Why Website</a>
           </li>
         </ul>
       </nav>

@@ -3,6 +3,7 @@
     text-align: center;
     gap: 3vh;
     padding: 3vw;
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.05);
     div{
         height: 6vh;
         color: var(--color-primaryfill);
@@ -125,7 +126,7 @@
     }
     div{
         padding-top: 46vh;
-        color: var(--color-white);
+        color: var(--color-black);
         background: linear-gradient(to bottom, transparent, var(--main-green));
         p{
             display: block;
@@ -144,4 +145,12 @@
     //         padding-top: 30vh;
     //     }
     // }
+}
+.why-card{
+    h3{
+        color: var(--primaryfill);
+    }
+    p{
+        color: #000;
+    }
 }
