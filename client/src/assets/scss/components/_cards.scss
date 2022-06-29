@@ -1,4 +1,5 @@
 .cid-container{
+    position: relative;
     @include flexColumn;
     text-align: center;
     gap: 3vh;
@@ -92,7 +93,7 @@
         text-align: left;
         border-radius: 15px;
         transition: all .25s ease-in;
-        background: linear-gradient(to bottom, transparent, #000000a6);
+        background: linear-gradient(to bottom, transparent, #000000);
 
         h4{
             padding-bottom: 3vh;

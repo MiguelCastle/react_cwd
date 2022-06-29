@@ -82,10 +82,10 @@
     z-index: 999;
     top: 0;
     right: 0;
-    transition-property:translateX;
-    transform: translateX(100%);
+    // transition: all .5s ease-in;
+    // transform: translateX(100%);
     // transform: matrix(0,0,0,0, 1, 0);
-    // transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
     width: 80vw;
     height: 100vh;
     padding: var(--inner-content-padding-sm);

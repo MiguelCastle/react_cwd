@@ -7,10 +7,13 @@ import Service from './sections/homeService';
 import brand from '../../assets/images/compressed/brand/logo-placeholder.webp';
 import Footer from '../../components/footer/footer';
 import ToTop from '../../components/toTop/toTop';
+// image
+import img from '../../assets/images/compressed/backgrounds/heroBackground.webp';
 
 const Home: React.FC<{}> = () => {
     return (
       <div id="container">
+        <div id="parralex-img" />
         <Header />
         <Intro />
         <Service />

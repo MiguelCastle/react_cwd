@@ -1,9 +1,21 @@
+#parralex-img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    background: url('./assets/images/compressed/backgrounds/heroBackground.webp');
+    background-position: 70% center;
+    background-size: cover;
+}
 // intro section
 #hintro-section{
     padding-bottom: 8vh;
-    background: url('./assets/images/compressed/backgrounds/heroBackground.webp');
-    background-position: 70% 50%;
-    background-size: cover;
+    background:none;
+    // background: url('./assets/images/compressed/backgrounds/heroBackground.webp');
+    // background-position: 70% 50%;
+    // background-size: cover;
     h1{
         text-align: center;
         font-size: var(--font-size-b1);
@@ -20,14 +32,18 @@
             margin-bottom: 6vh;
         }
     }
-    >p{
-        padding: 0 5vw;
-        color: var(--gray-white);
-        text-align: center;
-    }
+    // >p{
+    //     padding: 0 5vw;
+    //     color: var(--gray-white);
+    //     text-align: center;
+    // }
     ul{
         list-style: none;
         li{
+            p{
+                color: rgb(218, 218, 218);
+             
+            }
             @media #{$md-layout}{
                 width: 60%;
                 margin: 0 auto;
