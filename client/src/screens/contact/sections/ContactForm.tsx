@@ -29,41 +29,34 @@ const ContactForm:React.FC<{}> = () => {
 
     const hanldeContactSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        console.log('sending ')
-        console.log(data)
-        postData('http://localhost:8000/api/contact/', data)
-        .then(({res, status}) => {
-            console.log(status)
-            console.log(res)
-            if(status == 400){ 
-                throw res['details']
-            }
-            else {
-                setErrors(undefined)
-                setData(intialData)
-                console.log(res);
-            }
-        }).catch(err => {
-            let errs: errorOptionsType = {};
-            for(let i = 0; i < err.length; i++){
-                console.log(err[i]['path'][0])
-                const errName = err[i]['path'][0]
-                errs[errName] = err[i]['message']
-            }
+        setErrors(undefined)
+        setData(intialData)
+        // postData('http://localhost:8000/api/contact/', data)
+        // .then(({res, status}) => {
+        //     if(status == 400){ 
+        //         throw res['details']
+        //     }
+        //     else {
+        //         setErrors(undefined)
+        //         setData(intialData)
+        //     }
+        // }).catch(err => {
+        //     let errs: errorOptionsType = {};
+        //     for(let i = 0; i < err.length; i++){
+        //         const errName = err[i]['path'][0]
+        //         errs[errName] = err[i]['message']
+        //     }
      
-            setErrors(errs)
-        })
+        //     setErrors(errs)
+        // })
     }
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        console.log(e.currentTarget.name)
         setData({...data, [e.currentTarget.name]:e.currentTarget.value})
     }
     const handleTextAreaChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-        console.log(e.currentTarget.name)
         setData({...data, [e.currentTarget.name]:e.currentTarget.value})
     }
     const handleCaptchaChange = (value: any) => {
-        console.log(value)
         setCaptcha(true)
     }
 
