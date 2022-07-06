@@ -24,6 +24,7 @@ const ContactForm:React.FC<{}> = () => {
         message: ''
     }
     const [captcha, setCaptcha] = useState(false)
+    const [success, setSuccess] = useState(false)
     const captchaRef = useRef<any>(null);
     const [data, setData] = useState(intialData)
     const [errors, setErrors] = useState<ErrorInterface | undefined>(undefined)
@@ -41,6 +42,10 @@ const ContactForm:React.FC<{}> = () => {
                 else {
                     setErrors(undefined)
                     setData(intialData)
+                    setSuccess(true)
+                    setTimeout(function removeMessage(){
+                        setSuccess(false)
+                    }, 8000);
                 }
             }).catch(err => {
                 let errs: errorOptionsType = {};
@@ -72,6 +77,10 @@ const ContactForm:React.FC<{}> = () => {
 
     return (
         <section id="cform-section">
+            {success ?
+            <p className="success">
+                Email was sent successfully!
+            </p> :''}
             <img src={logo} alt="castillo development logo"/>
             <div>
                 <h4 className="theme-gradient">Let's Say Hi</h4>

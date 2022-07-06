@@ -4,6 +4,8 @@ const {logger} = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
 const corsOptions = require('./config/corsOptions');
 const cookieParser = require('cookie-parser');
+require('dotenv').config()
+
 const app = express();
 
 const PORT = process.env.PORT || 8000;

@@ -8,7 +8,7 @@ const schema = Joi.object({
         .max(30)
         .required(),
     email: Joi.string()
-        .email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } }),
+        .email({ minDomainSegments: 2, tlds: { allow: ['com', 'net', 'cl', 'org'] } }),
     subject: Joi.string()
         .max(30)
         .required(),
@@ -37,24 +37,25 @@ const schema = Joi.object({
 
 
 const sendEmail = async ({name, email, phone, subject, message}) => {
+  console.log(`email ${email}`)
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-      user: 'castilma95@gmail.com', // generated ethereal user
-      pass: 'ylhvkindbobmnict', // generated ethereal password
+      user:  process.env.AUTH_EMAIL, // generated ethereal user
+      pass: process.env.AUTH_PASSWORD, // generated ethereal password
     },
   });
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
     from: email, // sender address
-    to: "castilma95@gmail.com", // list of receivers
+    to: process.env.AUTH_EMAIL, // list of receivers
     subject: subject, // Subject line
     text: message, // plain text body
-    html: `<p>${name}</p><br/><p>${phone}</p><br/><p>${message}</p>`, // html body
+    html: `<p>NAME: ${name}</p><br/><p>EMAIL: ${email}</p><br/><p>PHONE: ${phone}</p><br/><p>${message}</p>`, // html body
   });
 }
 
@@ -71,7 +72,7 @@ module.exports.addContact = async (req, res) => {
         contact.save()
             .then(() => {
                 sendEmail(contact)
-                res.status(201).json({ msg: 'Contact has been added succesfully' });
+                res.status(201).json({ msg: 'okay' });
             })
             .catch(err => {
                 console.log(err)
