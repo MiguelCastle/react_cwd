@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import logo from "../../../assets/images/logo/logo-green.webp";
 import ReCAPTCHA from "react-google-recaptcha";
 import { postData } from '../../../utils/http-request';
@@ -24,6 +24,7 @@ const ContactForm:React.FC<{}> = () => {
         message: ''
     }
     const [captcha, setCaptcha] = useState(false)
+    const captchaRef = useRef<any>(null);
     const [data, setData] = useState(intialData)
     const [errors, setErrors] = useState<ErrorInterface | undefined>(undefined)
 
@@ -31,24 +32,26 @@ const ContactForm:React.FC<{}> = () => {
         e.preventDefault()
         setErrors(undefined)
         setData(intialData)
-        // postData('http://localhost:8000/api/contact/', data)
-        // .then(({res, status}) => {
-        //     if(status == 400){ 
-        //         throw res['details']
-        //     }
-        //     else {
-        //         setErrors(undefined)
-        //         setData(intialData)
-        //     }
-        // }).catch(err => {
-        //     let errs: errorOptionsType = {};
-        //     for(let i = 0; i < err.length; i++){
-        //         const errName = err[i]['path'][0]
-        //         errs[errName] = err[i]['message']
-        //     }
-     
-        //     setErrors(errs)
-        // })
+        if(captcha){
+            postData('http://localhost:8000/api/contact/', data)
+            .then(({res, status}) => {
+                if(status == 400){ 
+                    throw res['details']
+                }
+                else {
+                    setErrors(undefined)
+                    setData(intialData)
+                }
+            }).catch(err => {
+                let errs: errorOptionsType = {};
+                for(let i = 0; i < err.length; i++){
+                    const errName = err[i]['path'][0]
+                    errs[errName] = err[i]['message']
+                }
+         
+                setErrors(errs)
+            })
+        }
     }
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setData({...data, [e.currentTarget.name]:e.currentTarget.value})
@@ -57,7 +60,14 @@ const ContactForm:React.FC<{}> = () => {
         setData({...data, [e.currentTarget.name]:e.currentTarget.value})
     }
     const handleCaptchaChange = (value: any) => {
-        setCaptcha(true)
+        let token = captchaRef.current.getValue();
+        if(token){
+            setCaptcha(true)
+        } else {
+            console.log('failed captcha')
+            captchaRef.current.reset();
+            setCaptcha(false)
+        }
     }
 
     return (
@@ -84,6 +94,7 @@ const ContactForm:React.FC<{}> = () => {
                     {captcha ? <input type="submit" name="name" value="submit now" className='btn-default lightgreen-btn' />
                     : <ReCAPTCHA
                         sitekey="6Le8ntobAAAAAOlv9Rh-Csqj2hvFKNg1dPKc36QI"
+                        ref={captchaRef}
                         onChange={handleCaptchaChange}
                     />}
                 </form>
