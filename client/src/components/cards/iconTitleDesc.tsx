@@ -13,8 +13,8 @@ export const CardIconDesc: React.FC<CardIconDescProps> = ({icon, title, desc, ex
         <div className={color? color: ''}>
             {icon}
         </div>
-        <h3>{title}</h3>
-        <p>
+        <p className='cid-title'>{title}</p>
+        <p className='cid-desc'>
           {desc}
         </p>
       </article>

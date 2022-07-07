@@ -1,6 +1,7 @@
 import React from 'react';
 import IconTitleDesc from '../../../components/cards/iconTitleDesc';
 import {HeartBeat, BroadcastScreen, UnfoldingMap} from '../../../components/icons';
+import data from '../../../assets/data/homeIntro.json';
 
 const HomeIntro: React.FC<{}> = () => {
     return (
@@ -8,13 +9,13 @@ const HomeIntro: React.FC<{}> = () => {
             <h1 className='theme-gradient'>your partner in web development</h1>
             <ul>
                 <li>
-                    <IconTitleDesc icon={<HeartBeat/>} title={"Fast"} desc={"One of our goals is make a fast website. We do not want you to lose out on customers because of a slow loading site."}/>
+                    <IconTitleDesc icon={<HeartBeat/>} title={data[0].title} desc={data[0].desc}/>
                 </li>
                 <li>
-                    <IconTitleDesc icon={<BroadcastScreen />} title={"Responsive"} desc={"Mobile web searches now out number desktop searches. We make it a priority to make sure your mobile site looks good as well as for all other devices."}/>
+                    <IconTitleDesc icon={<BroadcastScreen />} title={data[1].title} desc={data[1].desc}/>
                 </li>
                 <li>
-                    <IconTitleDesc icon={<UnfoldingMap/>} title={"Friendly Support"} desc={"You're not just a number to me. You can reach out to me and expect to hear from me and not a robot."}/>
+                    <IconTitleDesc icon={<UnfoldingMap/>} title={data[2].title} desc={data[2].desc}/>
                 </li>
             </ul>
         </section>

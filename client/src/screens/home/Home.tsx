@@ -15,43 +15,45 @@ const Home: React.FC<{}> = () => {
       <div id="container">
         <div id="parralex-img" />
         <Header />
-        <Intro />
-        <Service />
-        <HomePortfolio />
-        <HomeGrowth />
-        <section id="htop-clients-section">
-          <h4 className="theme-gradient">top clients</h4>
-          <h2>Be An Our Early Client!</h2>
-          <ul>
-            <li>
-              <img src={brand} alt="" />
-            </li>
-            <li>
-              <img src={brand} alt="" />
-            </li>
-            <li>
-              <img src={brand} alt="" />
-            </li>
-            <li>
-              <img src={brand} alt="" />
-            </li>
-            <li>
-              <img src={brand} alt="" />
-            </li>
-            <li>
-              <img src={brand} alt="" />
-            </li>
-            <li>
-              <img src={brand} alt="" />
-            </li>
-            <li>
-              <img src={brand} alt="" />
-            </li>
-            <li>
-              <img src={brand} alt="" />
-            </li>
-          </ul>
-        </section>
+        <main>
+          <Intro />
+          <Service />
+          <HomePortfolio />
+          <HomeGrowth />
+          <section id="htop-clients-section">
+            <h4 className="theme-gradient">top clients</h4>
+            <h2>Be An Our Early Client!</h2>
+            <ul>
+              <li>
+                <img src={brand} alt="" />
+              </li>
+              <li>
+                <img src={brand} alt="" />
+              </li>
+              <li>
+                <img src={brand} alt="" />
+              </li>
+              <li>
+                <img src={brand} alt="" />
+              </li>
+              <li>
+                <img src={brand} alt="" />
+              </li>
+              <li>
+                <img src={brand} alt="" />
+              </li>
+              <li>
+                <img src={brand} alt="" />
+              </li>
+              <li>
+                <img src={brand} alt="" />
+              </li>
+              <li>
+                <img src={brand} alt="" />
+              </li>
+            </ul>
+          </section>
+        </main>
         <Footer/>
         <ToTop/>
       </div>

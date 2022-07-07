@@ -1,11 +1,11 @@
 [
     {
         "title": "HTML/CSS/JS",
-        "descript": "The core building blocks we need to make a gorgeous website."
+        "descript": "The core building blocks I need to make a gorgeous website."
     },
     {
         "title": "React",
-        "descript": "For web apps that need more interactivity we utilize the ReactJS framework."
+        "descript": "For web apps that need more interactivity I utilize the ReactJS framework."
     },
     {
         "title": "Node.js",
@@ -21,7 +21,7 @@
     },
     {
         "title": "hosting configuration",
-        "descript":"We'll take care of getting your website up and running."
+        "descript":"I'll take care of getting your website up and running."
     }
 
 ]

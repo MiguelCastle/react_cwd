@@ -12,7 +12,7 @@ const HomeService: React.FC<HomeServiceProps> = () => {
           <h4 className="theme-gradient">Web Development</h4>
           <h2>tools we use</h2>
           <p>
-            To provide fast, reliable, and secure web applications we use trusted technologies for development. Here is a list of the core development tools we may use for a given project.
+            To provide fast, reliable, and secure web applications I use trusted technologies for development. Here is a list of the core development tools I may use for a given project.
           </p>
           <ul>
               <li>

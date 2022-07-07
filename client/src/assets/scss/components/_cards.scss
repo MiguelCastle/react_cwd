@@ -9,12 +9,12 @@
         height: 6vh;
         color: var(--color-primaryfill);
     }
-    h3{
+    .cid-title{
         color: #fff;
         text-transform: capitalize;
         font-size: var(--font-size-b2);
     }
-    p{
+    .cid-desc{
         color: var(--color-gray);
         @media #{$md-layout}{
             font-size: var(--font-size-b3);
@@ -32,7 +32,7 @@
         width: 30%;
         left:0;
     }
-    h3{
+    .cid-title{
         color: var(--color-black);
     }
     @media #{$md-layout} {
@@ -41,17 +41,17 @@
         div{
             width: 20%;
         }
-        h3{
+        .cid-title{
             font-size: var(--font-size-b4);
         }
-        p{
+        .cid-desc{
             font-size: var(--font-size-b4) !important;
         }
     }
     @media #{$lg-layout} {
         margin: 1vw;
         height:90%;
-       p{
+        .cid-desc{
         font-size: var(--font-size-b2);
        }
        &:hover{
@@ -64,11 +64,11 @@
     border-radius: 8px;
     padding: 6vh 6vw;
     background: var(--color-white);
-    h3{
+    .cid-title{
         font-size: 6vh;
         color: #000;
     }
-    p{
+    .cid-desc{
         text-transform: capitalize;
     }
 }
@@ -148,10 +148,10 @@
     // }
 }
 .why-card{
-    h3{
+    .cid-title{
         color: var(--primaryfill);
     }
-    p{
+    .cid-desc{
         color: #000;
     }
 }

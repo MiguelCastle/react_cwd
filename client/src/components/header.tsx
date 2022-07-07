@@ -120,14 +120,21 @@ const Header: React.FC<HeaderProps> = () => {
     <div className="header-container">
       <img
         src={logo}
-        alt="logo of castillo webdevelopment"
+        alt="castillo webdevelopment logo"
       />
-      <button onClick={() => navigate('/contact')} className="btn-default" id="hbuy-now-btn">hire me</button>
+      <button 
+        onClick={() => navigate('/contact')} 
+        className="btn-default" 
+        id="hbuy-now-btn">
+          hire me
+      </button>
       <button
         className="btn-default icon-btn"
         id="header-menu-btn"
         ref={menuBtnRef}
         onClick={handleMenuBtnClick}
+        aria-haspopup="menu"
+        aria-label="menu open"
       >
         <HamburgerBars />
       </button>
@@ -137,12 +144,13 @@ const Header: React.FC<HeaderProps> = () => {
           id="header-menu-closebtn"
           ref={menuBtnRef}
           onClick={handleMenuBtnClick}
+          aria-label="menu close"
         >
           <CloseX color={"#000"} />
         </button>
         <ul id="mainmenu">
           <li>
-            <a href="/">Home</a>
+            <a href="/" role="menuitem">Home</a>
           </li>
           <li>
           <a href={"/#hservices-section"}>

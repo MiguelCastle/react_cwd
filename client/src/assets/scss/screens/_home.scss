@@ -197,8 +197,11 @@
         list-style: none;
         @media #{$lg-layout} {
             @include flexRowCenter;
-            gap: 3vw;
+            gap: 6vw;
             padding: 8vh 0;
+            li{
+                flex: 1;
+            }
         }
     }
     @media #{$md-layout} {
@@ -206,8 +209,7 @@
             @include flexRow;
             flex-wrap: wrap;
             li{
-                width: 47%;
-
+                width: 47%;            
             }
         }
     }
