@@ -9,6 +9,7 @@ import Footer from '../../components/footer/footer';
 import ToTop from '../../components/toTop/toTop';
 // image
 import img from '../../assets/images/compressed/backgrounds/heroBackground.webp';
+import HomeClients from './sections/homeClients';
 
 const Home: React.FC<{}> = () => {
     return (
@@ -20,39 +21,7 @@ const Home: React.FC<{}> = () => {
           <Service />
           <HomePortfolio />
           <HomeGrowth />
-          <section id="htop-clients-section">
-            <h4 className="theme-gradient">top clients</h4>
-            <h2>Be An Our Early Client!</h2>
-            <ul>
-              <li>
-                <img src={brand} alt="" />
-              </li>
-              <li>
-                <img src={brand} alt="" />
-              </li>
-              <li>
-                <img src={brand} alt="" />
-              </li>
-              <li>
-                <img src={brand} alt="" />
-              </li>
-              <li>
-                <img src={brand} alt="" />
-              </li>
-              <li>
-                <img src={brand} alt="" />
-              </li>
-              <li>
-                <img src={brand} alt="" />
-              </li>
-              <li>
-                <img src={brand} alt="" />
-              </li>
-              <li>
-                <img src={brand} alt="" />
-              </li>
-            </ul>
-          </section>
+          <HomeClients/>
         </main>
         <Footer/>
         <ToTop/>

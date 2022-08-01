@@ -39,8 +39,9 @@
         }
     }
     #hbuy-now-btn{
-        background-color: var(--main-green);
-        border: none;
+        // background-color: var(--main-green);
+        border: 1px solid #fff;
+        // border: none;
         @media #{$md-layout} {
             color: #000;
             background: var(--main-green);

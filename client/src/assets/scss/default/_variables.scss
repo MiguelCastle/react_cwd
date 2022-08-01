@@ -97,6 +97,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
 }
 section{
     padding: 0 3vw;
+    overflow-x: hidden;
     @media #{$md-layout} {
         padding: 0 6vw;
     }
@@ -125,5 +126,63 @@ section{
         padding: 1.25vw;     
         width: 8vh;
         height: 8vh;  
+    }
+}
+.left-100{
+    position: relative;
+    left: -100%;
+}
+.right-100{
+    position: relative;
+    left: 100%;
+}
+/********* ANIMATIONS *********/
+.appearRight{
+    position: relative;
+    left: -100%;
+    animation: appearRight 1s ease-in forwards;
+}
+@keyframes appearRight{
+    
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+.appearLeft{
+    position: relative;
+    left: 100%;
+    animation: appearLeft 1s ease-in forwards;
+}
+@keyframes appearLeft{
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+.up-30{
+    position: relative;
+    top: -30%;
+    opacity: 0;
+    transition: all ease-in 1s;
+}
+.appearUp{
+    position: relative;
+    // top: -30%;
+    opacity: 0;
+    animation: appearUp 1s ease-in .5s forwards;
+}
+@keyframes appearUp{
+    0%{
+        top: -30%;
+        opacity: 0;
+    }
+    100%{
+        top: 0%;
+        opacity: 1;
     }
 }

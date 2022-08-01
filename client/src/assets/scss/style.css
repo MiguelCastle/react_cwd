@@ -87,6 +87,7 @@ body {
 
 section {
   padding: 0 3vw;
+  overflow-x: hidden;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   section {
@@ -127,6 +128,100 @@ section h4 {
   }
 }
 
+.left-100 {
+  position: relative;
+  left: -100%;
+}
+
+.right-100 {
+  position: relative;
+  left: 100%;
+}
+
+/********* ANIMATIONS *********/
+.appearRight {
+  position: relative;
+  left: -100%;
+  -webkit-animation: appearRight 1s ease-in forwards;
+          animation: appearRight 1s ease-in forwards;
+}
+
+@-webkit-keyframes appearRight {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes appearRight {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+.appearLeft {
+  position: relative;
+  left: 100%;
+  -webkit-animation: appearLeft 1s ease-in forwards;
+          animation: appearLeft 1s ease-in forwards;
+}
+
+@-webkit-keyframes appearLeft {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes appearLeft {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+.up-30 {
+  position: relative;
+  top: -30%;
+  opacity: 0;
+  transition: all ease-in 1s;
+}
+
+.appearUp {
+  position: relative;
+  opacity: 0;
+  -webkit-animation: appearUp 1s ease-in 0.5s forwards;
+          animation: appearUp 1s ease-in 0.5s forwards;
+}
+
+@-webkit-keyframes appearUp {
+  0% {
+    top: -30%;
+    opacity: 0;
+  }
+  100% {
+    top: 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes appearUp {
+  0% {
+    top: -30%;
+    opacity: 0;
+  }
+  100% {
+    top: 0%;
+    opacity: 1;
+  }
+}
 @-webkit-keyframes slideInRight {
   from {
     -webkit-perspective: 1000;
@@ -228,8 +323,7 @@ section h4 {
   }
 }
 .header-container #hbuy-now-btn {
-  background-color: var(--main-green);
-  border: none;
+  border: 1px solid #fff;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header-container #hbuy-now-btn {
@@ -579,25 +673,54 @@ section h4 {
   background-size: cover;
 }
 
+@-webkit-keyframes growWordsRight {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes growWordsRight {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 #hintro-section {
   padding-bottom: 8vh;
   background: none;
 }
-#hintro-section h1 {
-  text-align: center;
+#hintro-section div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+#hintro-section div p {
+  text-align: left;
   font-size: var(--font-size-b1);
   font-weight: 900;
   text-transform: capitalize;
-  padding-top: 8vh;
-  margin-bottom: 10vh;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #fff;
+  margin: 1vh 0;
+  padding-left: 5vw;
+  width: 0%;
+  transition: width 1s ease-in-out;
+  -webkit-animation: growWordsRight 1s ease-in forwards;
+          animation: growWordsRight 1s ease-in forwards;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  #hintro-section h1 {
+  #hintro-section div p {
     font-size: var(--font-size-md-b1);
   }
 }
 @media only screen and (min-width: 992px) {
-  #hintro-section h1 {
+  #hintro-section div p {
     font-size: 16vh;
     padding-top: 6vh;
     margin-bottom: 6vh;
@@ -606,8 +729,23 @@ section h4 {
 #hintro-section ul {
   list-style: none;
 }
+#hintro-section ul li {
+  transition: all 1s ease-in;
+  -webkit-animation: appearUp 1s ease-in 1s forwards;
+          animation: appearUp 1s ease-in 1s forwards;
+  margin-top: 15%;
+  opacity: 0;
+}
+#hintro-section ul li:nth-child(2) {
+  -webkit-animation: appearUp 1s ease-in 1.5s forwards;
+          animation: appearUp 1s ease-in 1.5s forwards;
+}
+#hintro-section ul li:nth-child(3) {
+  -webkit-animation: appearUp 1s ease-in 2s forwards;
+          animation: appearUp 1s ease-in 2s forwards;
+}
 #hintro-section ul li p {
-  color: rgb(218, 218, 218);
+  color: #FEFCFB;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   #hintro-section ul li {
@@ -627,6 +765,16 @@ section h4 {
   }
 }
 
+@keyframes appearUp {
+  0% {
+    margin-top: 15%;
+    opacity: 0%;
+  }
+  100% {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
 #habout-section {
   display: flex;
   flex-direction: column;
@@ -697,6 +845,7 @@ section h4 {
   flex-direction: column;
   gap: 4vh;
   text-align: center;
+  overflow-x: hidden;
 }
 @media only screen and (min-width: 992px) {
   #hservices-section h4 {

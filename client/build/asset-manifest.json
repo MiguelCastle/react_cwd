@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.32c5b699.css",
-    "main.js": "/static/js/main.3cbed421.js",
+    "main.css": "/static/css/main.155cba67.css",
+    "main.js": "/static/js/main.f972cca6.js",
     "static/js/787.1259df87.chunk.js": "/static/js/787.1259df87.chunk.js",
-    "static/media/seattlediamondhall_screenshot.webp": "/static/media/seattlediamondhall_screenshot.2438b1726ccf7c87c71d.webp",
+    "static/media/seattlediamondhall_screenshot.webp": "/static/media/seattlediamondhall_screenshot.3f9b3229c8c87bb79be3.webp",
     "static/media/heroBackground.webp": "/static/media/heroBackground.a14ddb9144edf54debba.webp",
     "static/media/contactBackground.webp": "/static/media/contactBackground.02ec9c679487b4aafd2e.webp",
+    "static/media/bagelbundance_screenshot.webp": "/static/media/bagelbundance_screenshot.197e146c45c2c0fb849e.webp",
     "static/media/logo-green.webp": "/static/media/logo-green.70a3327b984df02e82b5.webp",
     "static/media/logo.webp": "/static/media/logo.618dc36193028ce4b37a.webp",
     "static/media/logo-placeholder.webp": "/static/media/logo-placeholder.fab280b549a84c3d15d7.webp",
     "static/media/coming-soon.webp": "/static/media/coming-soon.db379f4741fca82c6350.webp",
     "index.html": "/index.html",
-    "main.32c5b699.css.map": "/static/css/main.32c5b699.css.map",
-    "main.3cbed421.js.map": "/static/js/main.3cbed421.js.map",
+    "main.155cba67.css.map": "/static/css/main.155cba67.css.map",
+    "main.f972cca6.js.map": "/static/js/main.f972cca6.js.map",
     "787.1259df87.chunk.js.map": "/static/js/787.1259df87.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.32c5b699.css",
-    "static/js/main.3cbed421.js"
+    "static/css/main.155cba67.css",
+    "static/js/main.f972cca6.js"
   ]
 }

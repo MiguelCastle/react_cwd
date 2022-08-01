@@ -6,7 +6,10 @@ import data from '../../../assets/data/homeIntro.json';
 const HomeIntro: React.FC<{}> = () => {
     return (
         <section id="hintro-section">
-            <h1 className='theme-gradient'>your partner in web development</h1>
+            <div className="hi-header-wrp">
+                <p>your partner in</p>
+                <p> web development</p>
+            </div>
             <ul>
                 <li>
                     <IconTitleDesc icon={<HeartBeat/>} title={data[0].title} desc={data[0].desc}/>
